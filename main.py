@@ -4,7 +4,11 @@ from groq import Groq
 import base64
 import os
 
-app = FastAPI(title="Task 3 Credit OCR Backend")
+app = FastAPI(
+    title="Task 3 Credit OCR Backend",
+    docs_url="/docs",
+    openapi_url="/openapi.json"
+)
 
 app.add_middleware(
     CORSMiddleware,
