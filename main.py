@@ -22,7 +22,7 @@ app.add_middleware(
 def home():
     return {
         "status": "ok",
-        "message": "Credit OCR backend is running on Render"
+        "message": "Credit OCR backend is running successfully on Render"
     }
 
 @app.get("/config")
